@@ -23,7 +23,7 @@ public class BotModule {
         commandsList.add(new BotCommand("/weather", "Показывает погоду в указанном городе"));
 
         try{
-            this.execute(new SetMyCommands(commandsList, new BotCommandScopeDefault(), null));
+            this.execute(new SetMyCommands(commandsList, new BotCommandScopeDefault(), null));//????
         }catch (TelegramApiException e){
             System.out.println("Error with executing commands menu: "+e);
         }
